@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="YetkililerSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Yetkililer)">
+        <MappingFragment StoreEntitySet="YetkililerSet">
+          <ScalarProperty Name="YetkiliID" ColumnName="YetkiliID" />
+          <ScalarProperty Name="YetkiliAdi" ColumnName="YetkiliAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UrunlerSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Urunler)">
+        <MappingFragment StoreEntitySet="UrunlerSet">
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="Kategori" ColumnName="Kategori" />
+          <ScalarProperty Name="Fiyati" ColumnName="Fiyati" />
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
